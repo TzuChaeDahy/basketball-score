@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2275e170e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Basketball Score Challenge</title>
+  </head>
+  <body>
+    <h1 id="title">
+      Basketball Score <i class="fa-solid fa-basketball"></i></i>
+    </h1>
+    <div class="container">
+      <div class="scores">
+        <h2 id="home">home</h2>
+        <div class="display">
+          <p id="home-score">1</p>
+        </div>
+        <div class="buttons">
+          <button class="button" onclick="homeOnePoint()">+1</button>
+          <button class="button" onclick="homeTwoPoints()">+2</button>
+          <button class="button" onclick="homeThreePoints()">+3</button>
+        </div>
+      </div>
+
+      <div class="scores">
+        <h2 id="guest">guest</h2>
+        <div class="display">
+          <p id="guest-score">2</p>
+        </div>
+        <div class="buttons">
+          <button class="button" onclick="guestOnePoint()">+1</button>
+          <button class="button" onclick="guestTwoPoints()">+2</button>
+          <button class="button" onclick="guestThreePoints()">+3</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

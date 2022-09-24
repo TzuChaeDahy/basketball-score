@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+:root{
+    --clr-red: #F94F6D;
+    --clr-black: #080001;
+    --clr-white: #F5F3FF;
+    --clr-gray: #9AABD8;
+    --clr-bg: #1B244A;
+    --clr-body: #DDD6FE;
+    --clr-ball: #F59E0B;
+    
+    --fs-body: 16px;
+    --fw-body: 400;
+    --ff-body: 'Cursed Timer ULiL', sans-serif;
+    --ff-names: 'Paytone One', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    background-color: var(--clr-body);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    margin: 30px 0;
+    font-family: var(--ff-names);
+}
+
+.fa-basketball{
+    color: var(--clr-ball);
+}
+
+.container{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.scores{
+    background-color: var(--clr-bg);
+
+    width: 100%;
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#home,
+#guest{
+    text-transform: uppercase;
+    color: var(--clr-white);
+    font-size: 2.2rem;
+    font-family: var(--ff-names);
+}
+
+.display{
+    width: 60%;
+    height: 15vh;
+    border-radius: 8px;
+
+    background-color: black;
+    color: var(--clr-red);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-block: 20px;
+    font-size: 4rem;
+    text-align: right;
+}
+
+.buttons{
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    padding: 12px;
+    font-size: 1.4rem;
+    font-family: var(--ff-body);
+
+    background: none;
+    color: var(--clr-gray);
+    border: 2px solid var(--clr-gray);
+    border-radius: 6px;
+
+}
+
+@media only screen and (min-width: 900px){
+    #title{
+        font-size: 3rem;
+    }
+    
+    .container{
+        max-width: 900px;
+        flex-direction: row;
+    }
+
+    .scores{
+        width: 50%;
+    }
+
+    #home,
+    #guest{
+        font-size: 3rem;
+    }
+
+    .display{
+        margin-bottom: 75px;
+        width: 80%;
+        height: 20vh;
+    }
+
+    .buttons{
+        width: 100%;
+    }
+
+    .button{
+        padding: 18px;
+        font-size: 1.7rem;
+    }
+
+    .button:hover{
+        border-color: var(--clr-white);
+        color: var(--clr-white);
+        transition: 0.2s linear;
+    }
+
+    .button:active{
+        color: var(--clr-red);
+        border-color: var(--clr-red);
+        transition: 0.01s linear;
+    }
+}
